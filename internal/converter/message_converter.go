@@ -1,17 +1,18 @@
 package conversion
 
 import (
-	"github.com/skiliyani/go-app/internal/models"
+	messageModel "github.com/skiliyani/go-app/internal/messaging/models"
+	dbModel "github.com/skiliyani/go-app/internal/storage/models"
 )
 
 // ConvertMessageToProfile converts a message to a database-specific model
-func ConvertMessageToProfile(message *models.Message) *models.Profile {
+func ConvertMessageToProfile(message *messageModel.Message) *dbModel.Profile {
 	// Implement the conversion logic from the message struct to the database-specific model
 	// Create a new instance of dbmodels.Message and populate its fields based on the message data
 	// Return the converted model
 
 	// Example:
-	profile := &models.Profile{
+	profile := &dbModel.Profile{
 		ID:  message.ID,
 		URL: message.Content,
 		// Map other fields accordingly

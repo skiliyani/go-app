@@ -44,6 +44,8 @@ func (p *PostgresDB) StoreMessage(message string) error {
 	return nil
 }
 
+//
+
 // Close closes the connection to the database
 func (p *PostgresDB) Close() error {
 	return p.db.Close()
